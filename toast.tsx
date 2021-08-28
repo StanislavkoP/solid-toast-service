@@ -77,11 +77,6 @@ class ToastBaseService {
 }
 
 class ToastFacade extends ToastBaseService {
-
-  constructor(toastService: ToastServiceAbstract) {
-    super(toastService)
-  }
-
   showInfoPrimary(options: SpecificToastOptions) {
     return this.toastService.show(({ closeToast }) => (
       <Toast
